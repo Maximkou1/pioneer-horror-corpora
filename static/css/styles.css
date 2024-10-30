@@ -1,0 +1,185 @@
+﻿@font-face {
+    font-family: Ebbe; /* Гарнитура шрифта */
+    src: url('fonts/EbbeRegular.ttf');
+} /*загружаем шрифт*/
+
+*{
+  font-family: Ebbe;
+  color: orange;
+}
+/*дальше всякие регулировки шрифтов и позиционирование*/
+body {
+  background-size: cover;
+  font-family:Ebbe
+}
+
+h1 {
+  font-color: orange;
+  font-size: 250%;
+}
+
+h2{
+ font-size: 190%;
+ color: #8A2BE2;
+}
+
+p {
+  color: orange;
+  font-family: Ebbe;
+  font-size: 160%;
+  line-height: 1.2;
+  padding: 20px;
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding-left: 0;
+  color: grey;
+  font-size: 120%
+}
+
+label {
+  color: black;
+  font-size: 140%
+}
+
+input {
+
+	width: 500px;
+	font-size: 30px;
+	color: grey;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+.top-menu {
+  background: black;
+  padding: 10px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {
+  display: inline-block;
+  float: left;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+  color: orange;
+
+}
+
+
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-color: orange;
+  font-size: 250%;
+
+}
+
+container h2 {
+  color: #8A2BE2;
+  font-size: 220%
+}
+
+.container2 {
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 70%;
+
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.container2 h2{
+   font-size: 250%
+}
+.lineup{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+}
+.person{
+  float: center; /*Задаем обтекание*/
+  line-height: 60px;/*Высота строки + верт. центрирования текста*/
+  font-size: 40px;
+  background: black;
+  color: Orange;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 300px; /*Фиксируем ширину блока*/
+  border-radius: 15px;
+
+.person img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 45px;
+
+}
+  text-align: center; /*Центрируем текст по горизонтали*/ }
+
+.container3 {
+  position: absolute;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: orange;
+  line-height: 60px;
+
+}
+
+.container3 h1 {
+  font-color: purple;
+  font-size: 250%;
+
