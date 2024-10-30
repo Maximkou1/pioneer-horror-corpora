@@ -20,9 +20,9 @@ def search():
 def output():
     if request.args:
         word = request.args['word']
-        results = f.search_conllu_by_chain(word, None)
-        output = [result[2] for result in results]
-        if len(output) == 0:
+        results = f.search_conllu_by_chain(word, None) #применяем к полученному слову функцию поиска 
+        output = [result[2] for result in results] #выводим предложение
+        if len(output) == 0: #если ничего не нашлось
             output.append(f'Ужас! Мы ничего не нашли по запросу "{word}" ')
         return render_template('output.html', output=output)
     return redirect(url_for('main'))
