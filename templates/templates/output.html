@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <nav class="top-menu">
+        <a class="navbar-logo" href=""><img src="static/images/loogoo.png" width="80" height="70"></a>
+        <ul class="menu-main">
+            <li><a href="/">Поиск</a></li>
+            <li><a href="/search">Как искать</a></li>
+            <li><a href="/about">О проекте</a></li>
+            <li><a href="/authors">О нас</a></li>
+        </ul>
+    </nav>
+</head>
+<body align="center" background="static/images/background2.png">
+<div class="container3">
+    <h1>Вот что мы нашли по вашему запросу: </h1>
+    {% for sentence in output %}
+		<p>{{ sentence }}</p>
+
+		{% endfor %}
+</div>
+</body>
+</html>

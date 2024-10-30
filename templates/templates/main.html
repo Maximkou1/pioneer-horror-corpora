@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head font-family="Ebbe">
+    <meta charset="UTF-8">
+    <title>Бу!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <nav class="top-menu">
+        <a class="navbar-logo" href=""><img src="static/images/loogoo.png" width="80" height="70"></a>
+        <ul class="menu-main">
+            <li><a href="/">Поиск</a></li>
+            <li><a href="/search">Как искать</a></li>
+            <li><a href="/about">О проекте</a></li>
+            <li><a href="/authors">О нас</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body align="center" background="static/images/background4.png" font-family="Ebbe">
+<div class="container">
+    <h1>Бу! Испугался? Не бойся!</h1>
+        <h2>Добро пожаловать в корпус страшилок!!</h2>
+        <p>Здесь собраны самые леденящие душу истории, в которых можно искать ужасающие слова и выражения. <br>
+        Попробуйте сами! <br>
+        (если, конечно, не боитесь) </p>
+
+    <form action="/result">
+
+        <p><input type="text" name="word" placeholder="например: пугать + NOUN" size="18" /><br></p>
+
+    </form>
+</div>
+</body>
