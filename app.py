@@ -6,17 +6,17 @@ import func as f
 app = Flask(__name__, static_folder='static')
 
 
-@app.route('/')
+@app.route('/') #главная страница
 def main():
     return render_template('main.html')
 
 
-@app.route('/search')
+@app.route('/search') #страница о правилах поиска
 def search():
     return render_template('search.html')
 
 
-@app.route('/result')
+@app.route('/result') #страница результатов поиска
 def output():
     if request.args:
         word = request.args['word']
@@ -27,11 +27,11 @@ def output():
         return render_template('output.html', output=output)
     return redirect(url_for('main'))
 
-@app.route('/authors')
+@app.route('/authors') #страница об авторах
 def authors():
     return render_template('authors.html')
 
-@app.route('/about')
+@app.route('/about') #страница о проекте
 def about():
     return render_template('about.html')
 
