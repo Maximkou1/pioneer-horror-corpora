@@ -8,21 +8,22 @@
   color: orange;
 }
 /*дальше всякие регулировки шрифтов и позиционирование*/
+/*главная часть*/
 body {
   background-size: cover;
   font-family:Ebbe
 }
-
+/*первый заголовок*/
 h1 {
   font-color: orange;
   font-size: 250%;
 }
-
+/*второй*/
 h2{
  font-size: 190%;
  color: #8A2BE2;
 }
-
+/*текст*/
 p {
   color: orange;
   font-family: Ebbe;
@@ -30,6 +31,7 @@ p {
   line-height: 1.2;
   padding: 20px;
 }
+/*список*/
 ul {
   list-style: none; 
   margin: 0;
@@ -37,12 +39,12 @@ ul {
   color: grey;
   font-size: 120%
 }
-
+/*наименование формы*/
 label {
   color: black;
   font-size: 140%
 }
-
+/*форма для ввода*/
 input {
 
 	width: 500px;
@@ -53,13 +55,13 @@ input {
 	background: #F6F6f6;
 	border-radius: 8px;
 }
-
+/*верхняя плашка*/
 .top-menu {
   background: black;
   padding: 10px;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 
 }
 .top-menu:after {
@@ -67,10 +69,12 @@ input {
   display: table;
   clear: both;
 }
+/*логотип*/
 .navbar-logo {
   display: inline-block;
   float: left;
 }
+/*верхнее меню*/
 .menu-main {
   list-style: none;
   margin: 0;
@@ -78,6 +82,7 @@ input {
   float: left;
 
 }
+/*содержимое меню*/
 .menu-main li {display: inline-block;}
 .menu-main a {
   text-decoration: none;
@@ -94,7 +99,7 @@ input {
 
 
 
-
+/*блок1*/
 .container {
   position: absolute;
   top: 50%;
@@ -116,7 +121,7 @@ container h2 {
   color: #8A2BE2;
   font-size: 220%
 }
-
+/*блок2*/
 .container2 {
 
   position: absolute;
@@ -135,6 +140,7 @@ container h2 {
 .container2 h2{
    font-size: 250%
 }
+/*блок с авторами*/
 .lineup{
   position: relative;
   display: flex;
@@ -144,9 +150,10 @@ container h2 {
 
 
 }
+/*раздел про одного человека*/
 .person{
-  float: center; /*Задаем обтекание*/
-  line-height: 60px;/*Высота строки + верт. центрирования текста*/
+  float: center; 
+  line-height: 60px;
   font-size: 40px;
   background: black;
   color: Orange;
@@ -154,7 +161,7 @@ container h2 {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  width: 300px; /*Фиксируем ширину блока*/
+  width: 300px; 
   border-radius: 15px;
 
 .person img{
@@ -163,8 +170,8 @@ container h2 {
   border-radius: 45px;
 
 }
-  text-align: center; /*Центрируем текст по горизонтали*/ }
-
+  text-align: center;}
+/*блок3*/
 .container3 {
   position: absolute;
   margin-top: 100px;
